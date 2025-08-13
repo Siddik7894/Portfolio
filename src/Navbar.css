@@ -1,0 +1,45 @@
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #43cea2, #185a9d);
+  background-size: 400% 400%;
+  animation: sectionGradient 15s ease infinite;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffdd57;
+}
+
+/* Keyframes for navbar background */
+@keyframes sectionGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
